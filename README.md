@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mosaic AI - 公司官网
 
-## Getting Started
+Mosaic AI 公司的现代化响应式官方网站，使用 Next.js + Tailwind CSS 构建。
 
-First, run the development server:
+## 项目概述
+这是一个专业的公司展示网站，采用深紫色渐变主题设计，展现科技感和现代感。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 技术栈
+- **框架**: Next.js 14
+- **样式**: Tailwind CSS
+- **语言**: TypeScript
+- **响应式**: 完全支持移动端和桌面端
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 页面结构
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Header (导航栏)
+- Logo: Mosaic AI
+- 导航菜单: Home, About, Services, Projects, AI, Contact
+- 响应式汉堡菜单 (移动端)
+- 主题色: 深紫色渐变背景
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. 页面内容
 
-## Learn More
+#### Home (首页)
+- Hero区域: 主标题和副标题
+- 公司简介和核心价值
+- 特色服务预览
+- CTA按钮
 
-To learn more about Next.js, take a look at the following resources:
+#### About (关于我们)
+- 公司历史和使命
+- 团队介绍
+- 核心价值观
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Services (服务)
+- AI解决方案
+- 技术咨询
+- 产品开发
+- 服务流程
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Projects (项目案例)
+- 成功案例展示
+- 项目详情
+- 客户反馈
 
-## Deploy on Vercel
+#### AI (人工智能)
+- AI技术介绍
+- 产品展示
+- 技术优势
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Contact (联系我们)
+- 联系表单
+- 公司信息
+- 地址和联系方式
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Footer (页脚)
+- 公司信息
+- 快速链接
+- 社交媒体链接
+- 版权声明
+
+## 设计风格
+- **主色调**: 深紫色到深蓝色渐变 (#1a1a2e, #16213e, #0f3460)
+- **强调色**: 亮紫色 (#6c5ce7)
+- **文字**: 白色和浅灰色
+- **风格**: 现代、简洁、科技感
+- **响应式**: 支持所有设备尺寸
+
+## 特性
+- ✅ 完全响应式设计
+- ✅ 现代化UI/UX
+- ✅ 流畅动画效果
+- ✅ SEO优化
+- ✅ 快速加载
+- ✅ 跨浏览器兼容

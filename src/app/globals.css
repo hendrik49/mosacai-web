@@ -10,8 +10,80 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* 自定义颜色调色板 */
+  --color-primary-50: #f0f0ff;
+  --color-primary-100: #e4e4ff;
+  --color-primary-200: #ceceff;
+  --color-primary-300: #a8a8ff;
+  --color-primary-400: #7e7eff;
+  --color-primary-500: #6c5ce7;
+  --color-primary-600: #5d4fd7;
+  --color-primary-700: #4c3fb8;
+  --color-primary-800: #403395;
+  --color-primary-900: #372b77;
+  
+  --color-dark-100: #16213e;
+  --color-dark-200: #1a1a2e;
+  --color-dark-300: #0f3460;
+  --color-dark-400: #1e1e30;
+  --color-dark-500: #0a0a15;
+  
+  /* 自定义背景图像 */
+  --background-image-gradient-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  --background-image-gradient-purple: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  --background-image-gradient-radial: radial-gradient(ellipse at center, var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+  --background-image-gradient-rainbow: linear-gradient(135deg, #F262B5, #5FC5FF, #FFAC89, #8155FF, #789DFF, #9F73F1);
+  --background-image-gradient-hero: linear-gradient(135deg, rgba(156, 39, 176, 0.3) 0%, rgba(63, 81, 181, 0.3) 100%);
+  --background-image-gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  
+  /* 自定义动画 */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.5s ease-out;
 }
 
+/* 关键帧动画定义 */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { 
+    transform: translateY(30px); 
+    opacity: 0; 
+  }
+  100% { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+/* 无限滚动动画 */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* 基础样式 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-dark-200);
+  color: white;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* 暗色模式 */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +91,147 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
 }
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-500);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-600);
+}
+
+/* 实用类 */
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
+
+/* 禁用动画（用户偏好） */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 自定义工具类 - 让现有页面样式正常工作 */
+.bg-gradient-primary {
+  background-image: var(--background-image-gradient-primary);
+}
+
+.bg-gradient-purple {
+  background-image: var(--background-image-gradient-purple);
+}
+
+.bg-gradient-hero {
+  background-image: var(--background-image-gradient-hero);
+}
+
+.bg-gradient-card {
+  background-image: var(--background-image-gradient-card);
+}
+
+.bg-gradient-rainbow {
+  background-image: var(--background-image-gradient-rainbow);
+}
+
+.bg-gradient-radial {
+  background-image: var(--background-image-gradient-radial);
+}
+
+.bg-gradient-conic {
+  background-image: var(--background-image-gradient-conic);
+}
+
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 6rem 4rem;
+  }
+}
+
+.container-center {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 悬停效果 */
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* 组件类 - 从 v3 配置迁移 */
+.btn-primary {
+  background-image: var(--background-image-gradient-purple);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.btn-secondary {
+  border: 2px solid var(--color-primary-500);
+  color: var(--color-primary-500);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.card-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-primary-400), var(--color-primary-600));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+ 

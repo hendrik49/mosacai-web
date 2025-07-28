@@ -4,128 +4,128 @@ export default function Services() {
   const services = [
     {
       icon: Cpu,
-      title: '机器学习',
-      description: '定制化机器学习模型开发，提供预测分析和智能决策支持。',
+      title: 'Machine Learning',
+      description: 'Custom machine learning model development providing predictive analytics and intelligent decision support.',
       features: [
-        '预测分析模型',
-        '分类和回归算法',
-        '推荐系统开发',
-        '异常检测系统',
-        '数据挖掘服务',
-        '模型优化调参'
+        'Predictive analytics models',
+        'Classification and regression algorithms',
+        'Recommendation system development',
+        'Anomaly detection systems',
+        'Data mining services',
+        'Model optimization and tuning'
       ],
       process: [
-        '需求分析',
-        '数据处理',
-        '模型训练',
-        '效果评估',
-        '部署上线',
-        '持续优化'
+        'Requirements analysis',
+        'Data processing',
+        'Model training',
+        'Performance evaluation',
+        'Deployment',
+        'Continuous optimization'
       ]
     },
     {
       icon: Bot,
-      title: '深度学习',
-      description: '基于神经网络的深度学习解决方案，处理复杂的非线性问题。',
+      title: 'Deep Learning',
+      description: 'Neural network-based deep learning solutions for handling complex non-linear problems.',
       features: [
-        '图像识别与分析',
-        '自然语言处理',
-        '语音识别转换',
-        '计算机视觉',
-        '生成对抗网络',
-        '强化学习应用'
+        'Image recognition and analysis',
+        'Natural language processing',
+        'Speech recognition and conversion',
+        'Computer vision',
+        'Generative adversarial networks',
+        'Reinforcement learning applications'
       ],
       process: [
-        '问题定义',
-        '网络设计',
-        '数据增强',
-        '模型训练',
-        '调参优化',
-        '产品化部署'
+        'Problem definition',
+        'Network design',
+        'Data augmentation',
+        'Model training',
+        'Parameter optimization',
+        'Production deployment'
       ]
     },
     {
       icon: Database,
-      title: '数据分析',
-      description: '大数据处理和分析服务，挖掘数据价值，驱动业务增长。',
+      title: 'Data Analytics',
+      description: 'Big data processing and analytics services to extract value from data and drive business growth.',
       features: [
-        '数据清洗整理',
-        '统计分析报告',
-        '可视化仪表板',
-        '商业智能BI',
-        '实时数据监控',
-        '数据仓库建设'
+        'Data cleaning and preparation',
+        'Statistical analysis reports',
+        'Visualization dashboards',
+        'Business intelligence BI',
+        'Real-time data monitoring',
+        'Data warehouse construction'
       ],
       process: [
-        '数据收集',
-        '清洗处理',
-        '探索分析',
-        '建模分析',
-        '结果解释',
-        '决策支持'
+        'Data collection',
+        'Cleaning and processing',
+        'Exploratory analysis',
+        'Modeling and analysis',
+        'Results interpretation',
+        'Decision support'
       ]
     },
     {
       icon: BarChart,
-      title: 'AI咨询',
-      description: '专业的AI战略咨询服务，助力企业制定AI转型路线图。',
+      title: 'AI Consulting',
+      description: 'Professional AI strategy consulting services to help enterprises develop AI transformation roadmaps.',
       features: [
-        'AI战略规划',
-        '技术可行性评估',
-        '投资回报分析',
-        '团队培训指导',
-        '项目管理支持',
-        '风险评估控制'
+        'AI strategic planning',
+        'Technical feasibility assessment',
+        'ROI analysis',
+        'Team training and guidance',
+        'Project management support',
+        'Risk assessment and control'
       ],
       process: [
-        '现状调研',
-        '需求分析',
-        '方案设计',
-        '实施计划',
-        '项目执行',
-        '效果评估'
+        'Current state assessment',
+        'Requirements analysis',
+        'Solution design',
+        'Implementation planning',
+        'Project execution',
+        'Performance evaluation'
       ]
     },
     {
       icon: Cog,
-      title: '技术集成',
-      description: '将AI技术无缝集成到现有业务系统中，提升整体效率。',
+      title: 'Technical Integration',
+      description: 'Seamlessly integrate AI technology into existing business systems to improve overall efficiency.',
       features: [
-        'API接口开发',
-        '系统集成服务',
-        '云平台部署',
-        '性能优化调优',
-        '监控告警系统',
-        '维护升级服务'
+        'API interface development',
+        'System integration services',
+        'Cloud platform deployment',
+        'Performance optimization',
+        'Monitoring and alerting systems',
+        'Maintenance and upgrade services'
       ],
       process: [
-        '架构设计',
-        '接口开发',
-        '系统测试',
-        '集成部署',
-        '性能调优',
-        '运维支持'
+        'Architecture design',
+        'Interface development',
+        'System testing',
+        'Integration deployment',
+        'Performance tuning',
+        'Operations support'
       ]
     },
     {
       icon: Lightbulb,
-      title: '创新研发',
-      description: '前沿AI技术研发，探索新的应用场景和商业模式。',
+      title: 'Innovation R&D',
+      description: 'Cutting-edge AI technology research and development, exploring new application scenarios and business models.',
       features: [
-        '算法研究开发',
-        '原型系统搭建',
-        '概念验证POC',
-        '技术专利申请',
-        '学术论文发表',
-        '产学研合作'
+        'Algorithm research and development',
+        'Prototype system construction',
+        'Proof of concept POC',
+        'Technical patent applications',
+        'Academic paper publication',
+        'Industry-academia cooperation'
       ],
       process: [
-        '技术调研',
-        '方案设计',
-        '算法开发',
-        '实验验证',
-        '原型开发',
-        '成果转化'
+        'Technical research',
+        'Solution design',
+        'Algorithm development',
+        'Experimental validation',
+        'Prototype development',
+        'Results commercialization'
       ]
     }
   ]
@@ -137,13 +137,13 @@ export default function Services() {
         <div className="container-center">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-white">我们的</span>
-              <span className="text-gradient"> 服务</span>
+              <span className="text-white">Our</span>
+              <span className="text-gradient"> Services</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              从机器学习到深度学习，从数据分析到AI咨询
+              From machine learning to deep learning, from data analytics to AI consulting
               <br />
-              我们提供全方位的人工智能解决方案
+              We provide comprehensive artificial intelligence solutions
             </p>
           </div>
         </div>
@@ -173,7 +173,7 @@ export default function Services() {
                   {/* Features */}
                   <div>
                     <h4 className="text-lg font-semibold text-primary-400 mb-3">
-                      服务内容
+                      Service Features
                     </h4>
                     <ul className="space-y-2">
                       {service.features.map((feature, idx) => (
@@ -188,7 +188,7 @@ export default function Services() {
                   {/* Process */}
                   <div>
                     <h4 className="text-lg font-semibold text-primary-400 mb-3">
-                      服务流程
+                      Service Process
                     </h4>
                     <ul className="space-y-2">
                       {service.process.map((step, idx) => (
@@ -213,19 +213,19 @@ export default function Services() {
         <div className="container-center">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <span className="text-white">需要</span>
-              <span className="text-gradient"> 定制化服务</span>
-              <span className="text-white">？</span>
+              <span className="text-white">Need</span>
+              <span className="text-gradient"> Custom Services</span>
+              <span className="text-white">?</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              我们的专家团队将根据您的具体需求，为您量身定制最适合的AI解决方案
+              Our expert team will customize the most suitable AI solutions according to your specific needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="btn-primary">
-                立即咨询
+                Get Started Now
               </a>
               <a href="/projects" className="btn-secondary">
-                查看案例
+                View Case Studies
               </a>
             </div>
           </div>

@@ -4,23 +4,23 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: Brain,
-      title: '智能算法',
-      description: '基于最新的机器学习和深度学习技术，提供精准的AI解决方案。'
+      title: 'Intelligent Algorithms',
+      description: 'Based on the latest machine learning and deep learning technologies, providing precise AI solutions.'
     },
     {
       icon: Zap,
-      title: '高效部署',
-      description: '快速集成和部署AI模型，缩短项目周期，快速见效。'
+      title: 'Efficient Deployment',
+      description: 'Rapid integration and deployment of AI models, shortening project cycles for quick results.'
     },
     {
       icon: Shield,
-      title: '安全可靠',
-      description: '企业级安全保障，确保数据隐私和系统稳定性。'
+      title: 'Secure & Reliable',
+      description: 'Enterprise-grade security protection, ensuring data privacy and system stability.'
     },
     {
       icon: Target,
-      title: '精准定制',
-      description: '针对不同行业和业务需求，提供个性化的AI解决方案。'
+      title: 'Precision Customization',
+      description: 'Tailored AI solutions for different industries and business needs, providing personalized services.'
     }
   ]
 
@@ -29,11 +29,11 @@ const FeaturesSection = () => {
       <div className="container-center">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="text-white">为什么选择</span>
+            <span className="text-white">Why Choose</span>
             <span className="text-gradient"> Mosaic AI</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            我们专注于为企业提供最前沿的AI技术，助力业务创新和数字化转型
+            We focus on providing enterprises with cutting-edge AI technology to drive business innovation and digital transformation
           </p>
         </div>
 

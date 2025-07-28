@@ -11,7 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  /* 自定义颜色调色板 */
+  /* Custom color palette */
   --color-primary-50: #f0f0ff;
   --color-primary-100: #e4e4ff;
   --color-primary-200: #ceceff;
@@ -29,7 +29,7 @@
   --color-dark-400: #1e1e30;
   --color-dark-500: #0a0a15;
   
-  /* 自定义背景图像 */
+  /* Custom background images */
   --background-image-gradient-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   --background-image-gradient-purple: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
   --background-image-gradient-radial: radial-gradient(ellipse at center, var(--tw-gradient-stops));
@@ -38,13 +38,13 @@
   --background-image-gradient-hero: linear-gradient(135deg, rgba(156, 39, 176, 0.3) 0%, rgba(63, 81, 181, 0.3) 100%);
   --background-image-gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
   
-  /* 自定义动画 */
+  /* Custom animations */
   --animate-float: float 6s ease-in-out infinite;
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-up: slideUp 0.5s ease-out;
 }
 
-/* 关键帧动画定义 */
+/* Keyframe animation definitions */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
@@ -66,13 +66,13 @@
   }
 }
 
-/* 无限滚动动画 */
+/* Infinite scroll animation */
 @keyframes scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
 
-/* 基础样式 */
+/* Base styles */
 html {
   scroll-behavior: smooth;
 }
@@ -83,7 +83,7 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* 暗色模式 */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -91,7 +91,7 @@ body {
   }
 }
 
-/* 自定义滚动条 */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }

@@ -96,7 +96,10 @@ export function PhoneCarousel({ className }: { className?: string }) {
     <motion.div
       initial={{ opacity: 0, y: 150 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{
+        duration: 0.5,
+        ease: [0.25, 1, 0.5, 1],
+      }}
       className={cn("flex flex-col items-center gap-6", className)}>
       {/* Phone SVG with Dynamic Content */}
       <div className="relative">

@@ -84,7 +84,7 @@ export const MovingBorder = ({
   className?: string;
   [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<any>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
@@ -138,4 +138,4 @@ export const MovingBorder = ({
       </motion.div>
     </>
   );
-}; 
+};

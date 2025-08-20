@@ -10,7 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
+
   /* Custom color palette */
   --color-primary-50: #f0f0ff;
   --color-primary-100: #e4e4ff;
@@ -22,13 +22,13 @@
   --color-primary-700: #4c3fb8;
   --color-primary-800: #403395;
   --color-primary-900: #372b77;
-  
+
   --color-dark-100: #16213e;
   --color-dark-200: #1a1a2e;
   --color-dark-300: #0f3460;
   --color-dark-400: #1e1e30;
   --color-dark-500: #0a0a15;
-  
+
   /* Custom background images */
   --background-image-gradient-primary: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   --background-image-gradient-purple: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
@@ -37,11 +37,17 @@
   --background-image-gradient-rainbow: linear-gradient(135deg, #F262B5, #5FC5FF, #FFAC89, #8155FF, #789DFF, #9F73F1);
   --background-image-gradient-hero: linear-gradient(135deg, rgba(156, 39, 176, 0.3) 0%, rgba(63, 81, 181, 0.3) 100%);
   --background-image-gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-  
+
   /* Custom animations */
   --animate-float: float 6s ease-in-out infinite;
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-up: slideUp 0.5s ease-out;
+
+ --text-body-medium: 16px;
+ --text-body-medium--line-height: 24px;
+
+ --text-footnote-medium: 14px;
+ --text-footnote-medium--line-height: 20px;
 }
 
 /* Keyframe animation definitions */
@@ -56,13 +62,13 @@
 }
 
 @keyframes slideUp {
-  0% { 
-    transform: translateY(30px); 
-    opacity: 0; 
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
   }
-  100% { 
-    transform: translateY(0); 
-    opacity: 1; 
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -233,5 +239,3 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
-
- 

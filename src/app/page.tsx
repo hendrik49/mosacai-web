@@ -6,11 +6,13 @@ import { cn } from "@/lib/utils";
 import { MenuIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import FloatingCard from "./components/floating-card";
+import FloatingCard, { FloatingCardTestimonial } from "./components/floating-card";
 
 export default function HomePage() {
+  const PhoneRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
       <Navbar />
@@ -52,6 +54,8 @@ export default function HomePage() {
         </div>
 
         <FloatingCard />
+
+        <FloatingCardTestimonial />
 
         <PhoneCarousel className="my-10 mx-auto" />
       </div>

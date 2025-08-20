@@ -8,6 +8,13 @@ import { cn } from "@/lib/utils"
 
 import MockupApp1 from "@/assets/images/mockup_app_1.png"
 import MockupApp2 from "@/assets/images/mockup_app_2.png"
+import MockupApp3 from "@/assets/images/mockup_app_3.png"
+import MockupApp4 from "@/assets/images/mockup_app_4.png"
+import MockupApp5 from "@/assets/images/mockup_app_5.png"
+import MockupApp6 from "@/assets/images/mockup_app_6.png"
+import MockupApp7 from "@/assets/images/mockup_app_7.png"
+import MockupApp8 from "@/assets/images/mockup_app_8.png"
+import MockupApp9 from "@/assets/images/mockup_app_9.png"
 import Image from "next/image"
 
 import { motion } from "motion/react"
@@ -15,7 +22,6 @@ import { motion } from "motion/react"
 interface SlideContent {
   id: string
   title: string
-  screenColor: string
   appContent: React.ReactNode
 }
 
@@ -23,7 +29,6 @@ const slides: SlideContent[] = [
   {
     id: "home",
     title: "Home Screen",
-    screenColor: "#1e293b",
     appContent: (
       <div>
         <Image src={MockupApp1} alt="Mockup App 1" />
@@ -33,7 +38,6 @@ const slides: SlideContent[] = [
   {
     id: "messages",
     title: "Messages",
-    screenColor: "#059669",
     appContent: (
       <div>
         <Image src={MockupApp2} alt="Mockup App 2" />
@@ -43,36 +47,66 @@ const slides: SlideContent[] = [
   {
     id: "photos",
     title: "Photos",
-    screenColor: "#7c3aed",
     appContent: (
-      <div className="grid grid-cols-3 gap-1 p-2">
-        {Array.from({ length: 9 }).map((_, i) => (
-          <div key={i} className="aspect-square bg-white/30 rounded"></div>
-        ))}
+      <div>
+        <Image src={MockupApp3} alt="Mockup App 3" />
       </div>
     ),
   },
   {
     id: "settings",
     title: "Settings",
-    screenColor: "#dc2626",
     appContent: (
-      <div className="text-white p-3 space-y-2">
-        <div className="flex items-center gap-2 text-xs">
-          <div className="w-4 h-4 bg-white/30 rounded"></div>
-          <span>WiFi</span>
-        </div>
-        <div className="flex items-center gap-2 text-xs">
-          <div className="w-4 h-4 bg-white/30 rounded"></div>
-          <span>Bluetooth</span>
-        </div>
-        <div className="flex items-center gap-2 text-xs">
-          <div className="w-4 h-4 bg-white/30 rounded"></div>
-          <span>Privacy</span>
-        </div>
+      <div>
+        <Image src={MockupApp4} alt="Mockup App 4" />
       </div>
     ),
   },
+  {
+    id: "camera",
+    title: "Camera",
+    appContent: (
+      <div>
+        <Image src={MockupApp5} alt="Mockup App 5" />
+      </div>
+    ),
+  },
+  {
+    id: "music",
+    title: "Music",
+    appContent: (
+      <div>
+        <Image src={MockupApp6} alt="Mockup App 6" />
+      </div>
+    ),
+  },
+  {
+    id: "video",
+    title: "Video",
+    appContent: (
+      <div>
+        <Image src={MockupApp7} alt="Mockup App 7" />
+      </div>
+    ),
+  },
+  {
+    id: "weather",
+    title: "Weather",
+    appContent: (
+      <div>
+        <Image src={MockupApp8} alt="Mockup App 8" />
+      </div>
+    ),
+  },
+  {
+    id: "news",
+    title: "News",
+    appContent: (
+      <div>
+        <Image src={MockupApp9} alt="Mockup App 9" />
+      </div>
+    ),
+  }
 ]
 
 export function PhoneCarousel({ className }: { className?: string }) {
@@ -104,36 +138,23 @@ export function PhoneCarousel({ className }: { className?: string }) {
       {/* Phone SVG with Dynamic Content */}
       <div className="relative">
         <svg
-          width="316"
-          height="643"
           viewBox="0 0 316 643"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="drop-shadow-2xl"
+          className="w-[316px] h-auto"
         >
           Dynamic Screen Content
-          <rect
-            x="16.4111"
-            y="0"
-            width="282.704"
-            height="640"
-            fill={currentContent.screenColor}
-            rx="50"
-            className="transition-colors duration-500"
-          />
 
           {/* Content Overlay */}
           <foreignObject
             x="16.4111"
-            y="20"
-            width="282.704"
-            height="640"
-            className="transition-opacity duration-500"
+            y="14"
+            className="transition-opacity duration-500 w-full h-full rounded-4xl"
           >
             <div className="w-full h-full flex flex-col">
               {/* <div className="flex justify-between items-center p-2 text-white text-xs">
                 <span className="px-4">9:41</span>
-                
+
               </div> */}
 
               {/* App Content */}
